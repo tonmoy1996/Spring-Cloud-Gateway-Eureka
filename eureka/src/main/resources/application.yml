@@ -1,0 +1,14 @@
+server:
+  port: 8082
+spring:
+  profiles: 
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:////Users/tonmoysaha/developer/spring-cloud-gateway/conf
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

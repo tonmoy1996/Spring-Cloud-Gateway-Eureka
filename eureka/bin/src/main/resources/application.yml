@@ -1,0 +1,12 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: cloud-server
+  cloud:
+    config:
+      import: "optional:configserver:"
+      server:
+        prefix: /config
+        native:
+          search-location: file:\\\Users\\tonmoysaha\\developer\\spring-cloud-gateway\\conf
